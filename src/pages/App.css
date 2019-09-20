@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background: url('./img/background.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.container {
+  background: rgba(255, 253, 253, 0.418);
+  width: 1000px;
+  height: 550px;
+  border-radius: 8px;
+  padding: 7px 35px;
+}
+
+.container .header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.container .header h1 {
+  color: #fff;
+  font-family: Roboto, Ubuntu, sans-serif;
+}
+
+.container .header div.menu {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+  align-content: center;
+}
+
+.container .header ul.menu-center {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 15px;
+  
+}
+
+.container .header ul.menu-right {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+  grid-gap: 15px;
+}
+
+.container .header ul a {
+  text-decoration: none;
+  color: #fff;
+  font-family: Roboto, Ubuntu, sans-serif;
+  font-weight: bold;
+}
+
+.container .header ul a:hover {
+  color: rgba(143, 21, 21, 0.678);
+  transition: all 0.2s;
+}
+
+div.app-container {
+  margin-top: 40px;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  max-height: 430px;
+}
+
+div.app-container div.section-right {
+  background: rgba(0, 0, 0, 0.473);
+  padding: 20px 25px;
+  height: 100%;
+  width: 500px;
+  margin-left: 50px;
+}
+
+div.app-container div.section-right h2, div.section-right p {
+  color: rgb(255, 255, 255);
+}
+
+div.app-container div.section-right h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+div.app-container div.section-right p {
+  line-height: 23px;
+  text-align: ;
+}
+
+
+div.app-container div.section-left {
+  background: url('./img/capa-album.jpg');
+  background-size: 350px 300px;
+  background-repeat: no-repeat;
+  background-position: center 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  
+}
+
+div.app-container div.section-left h2 {
+  color: #fff;
+}
